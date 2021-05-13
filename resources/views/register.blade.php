@@ -10,6 +10,11 @@
                 <div class="mb-3">
                     <label class="form-label">Nome</label>
                     <input type="name" name="name" class="form-control" aria-describedby="emailHelp" value="{{ old('name') }}">
+                    @if($errors->has('name'))
+                    <div class="alert alert-danger" role="alert">
+                        <strong>{{ $errors->first('name') }}</strong>
+                    </div>
+                    @endif
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Email</label>
