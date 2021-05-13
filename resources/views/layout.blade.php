@@ -32,8 +32,8 @@
                     @else
                     <div class="d-flex">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="" class="btn btn-success">Login</a>
-                            <a href="" class="btn btn-primary">Registro</a>
+                            <a href="{{route('login')}}" class="btn btn-success">Login</a>
+                            <a href="{{route('register')}}" class="btn btn-primary">Registro</a>
                         </div>
                     </div>
                     @endauth
