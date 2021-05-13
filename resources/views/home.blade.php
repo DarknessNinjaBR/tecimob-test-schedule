@@ -50,6 +50,12 @@
                 </form>
             </div>
             </div>
+            @if(count($data) == 0)
+            <br/>
+            <div class="alert alert-warning" role="alert">
+                Nada Encontrado
+              </div>
+            @endif
             <thead>
                 <br/>
                 <tr>
